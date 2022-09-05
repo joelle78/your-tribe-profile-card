@@ -8,7 +8,7 @@ html {
 
 body {
   height:100vh;
-  font-family: open sans;
+  font-family: 'Roboto', sans-serif;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -23,8 +23,7 @@ article {
   flex-direction:column;
   align-items:center;
   justify-content:flex-end;
-  background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background-image: linear-gradient(to right, #5d54a4, #6857ac, #745bb3, #805eba, #8c61c1, #9765c5, #a269c8, #ad6dcc, #b874cf, #c37bd1, #cd82d4, #d789d7);
   box-shadow:0 0 20px 20px rgba(0,0,0,.1);
   border-radius:1rem;
   position: relative;
@@ -37,12 +36,12 @@ header {
   justify-content:center;
   align-items:center;
   justify-content:flex-end;
-  
+
 }
 
 h1 {
   margin:2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: white;
 }
 
 button {
@@ -60,14 +59,14 @@ button {
 }
 button:focus {
   outline:none;
-  background:#202592;
+  background:#2A3D66
 }
 button:focus svg {
   stroke: rgba(0,239,255,1);
 }
 
 svg {
-  stroke: #4e54c8;
+  stroke: #2A3D66;
   position: absolute;
   top:calc(1.25rem - 12px);
   left:calc(1.25rem - 12px);
@@ -91,7 +90,7 @@ img {
 dl {
   width:100%;
   background: rgb(255,255,255);
-  
+
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
@@ -121,18 +120,18 @@ dd {
   padding-left:.3rem;
   transition:.25s .3s;
 }
-dd:nth-of-type(2){  
+dd:nth-of-type(2){
   transform: translateY(1rem);
 }
 
-p { 
+p {
   margin:0
 }
 
 article > p {
   padding:3rem 2rem;
   margin-top: 0;
-  background:rgba(255,255,255, 0.5);
+  color: white;
   text-align:center;
   border-radius: 0 0 1rem 1rem;
   width:100%;
