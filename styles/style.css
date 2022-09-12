@@ -31,6 +31,8 @@ body {
   overflow: hidden;
   outline: none;
   animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+  
+
 }
 
 .buttonStar2 {
@@ -44,6 +46,8 @@ body {
   overflow: hidden;
   outline: none;
   animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+
+
 }
 
 .buttonStar3 {
@@ -57,6 +61,8 @@ body {
   overflow: hidden;
   outline: none;
   animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+
+
 }
 
 @keyframes fadeInFromTop {

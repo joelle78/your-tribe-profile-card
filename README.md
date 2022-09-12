@@ -1,2 +1,7 @@
-> Fork deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+Welkom bij mijn eigen visitekaartje!
 
+Benieuwd naar hoe ik mij ontwikkeld heb en het proces tot dit eindresultaat?
+Bezoek dan mijn wiki op GitHub: https://github.com/joelle78/your-tribe-profile-card/wiki
+Tips en tops zijn altijd welkom.
+
+❤ Joëlle
