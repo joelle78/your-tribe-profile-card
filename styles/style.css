@@ -1,5 +1,6 @@
 * {
   box-sizing:border-box;
+
 }
 
 html {
@@ -13,11 +14,85 @@ body {
   justify-content:center;
   align-items:center;
   color:#10214e;
+  background-image: url("https://wallpapercave.com/uwp/uwp1985674.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/* Star buttons */
+.buttonStar1 {
+  position: absolute;
+  top:100px;
+  left: 180px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+
+.buttonStar2 {
+  position: absolute;
+  top: 550px;
+  left: 100px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+
+.buttonStar3 {
+  position: absolute;
+  top: 250px;
+  right: 230px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+
+@keyframes fadeInFromTop {
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0%{
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+  25%{
+    transform: translate(5%, 15%) rotate(360deg);
+  }
+  50%{
+    transform: translate(10%, 5%) rotate(360deg);
+  }
+  75%{
+    transform: translate(0%, 15%) rotate(360deg);
+  }
+  100%{
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+}
+
+
+
 article {
-  width:50vw;
-  max-width: 25em;
+  width:30vw;
+  max-width: 30em;
   min-width:20em;
   display:flex;
   flex-direction:column;
@@ -39,90 +114,48 @@ header {
 
 }
 
+
 h1 {
   margin:2rem 0 1rem;
+  font-size: 2.5rem;
   color: white;
 }
 
-button {
-  border:none;
-  position: absolute;
-  right:1rem;
-  top:1rem;
-  width:2.5rem;
-  height:2.5rem;
-  transform: scale(.8);
-  background: rgba(0,239,255,1);
-  border-radius:50%;
-  padding:.25rem;
-  transition:.25s;
-}
-button:focus {
-  outline:none;
-  background:#2A3D66
-}
-button:focus svg {
-  stroke: rgba(0,239,255,1);
+.profile-picture img {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%
 }
 
-svg {
-  stroke: #2A3D66;
-  position: absolute;
-  top:calc(1.25rem - 12px);
-  left:calc(1.25rem - 12px);
-  transition-delay: .25s;
-}
-button svg:nth-of-type(2) {
-  opacity:0;
-  transition-delay: 0ms;
+.leeftijd {
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+  color: white;
+  align-items: center;
 }
 
-img {
-  width:10em;
-  border-radius:10em;
-  border:5px solid #fff;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  position:relative;
-  top:2rem;
-  transition:.25s .15s;
+.woonplaats{
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+  color: white;
+  align-items: center;
 }
 
-dl {
-  width:100%;
-  background: rgb(255,255,255);
-
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "html-dd css-dd js-dd"
-    "html-dt css-dt js-dt"
-    ;
-  justify-items:center;
-  align-items:start;
-  padding:5rem 0 3rem;
-  margin-top: -3rem;
-  margin-bottom: 0;
-  text-align: center;
+.werk{
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+  color: white;
+  align-items: center;
 }
 
-dt{
-  font-weight: bold;
-  border-top: 1px solid rgba(0,0,0,0.3);
-  padding-top: .25rem;
-  margin-top: .25rem;
+.studie {
+  margin: 10px 0 25px 0;
+  font-size: 1.1rem;
+  color: white;
+  align-items: center;
 }
-dt:nth-of-type(1){ grid-area: html-dt; }
-dt:nth-of-type(2){ grid-area: css-dt; transform: translateY(1rem);}
-dt:nth-of-type(3){ grid-area: js-dt; }
 
-dd {
-  margin:0;
-  padding-left:.3rem;
-  transition:.25s .3s;
-}
-dd:nth-of-type(2){
-  transform: translateY(1rem);
-}
+
 
 p {
   margin:0
@@ -135,32 +168,4 @@ article > p {
   text-align:center;
   border-radius: 0 0 1rem 1rem;
   width:100%;
-}
-
-/* expand content */
-body.expand {
-  font-size:1.15em;
-}
-
-body.expand article {
-  width:60vw;
-  max-width: 60vw;
-}
-
-body.expand button svg:first-of-type {
-  opacity:0;
-  transition-delay: 0ms;
-}
-
-body.expand button svg:nth-of-type(2) {
-  opacity:1;
-  transition-delay:.25s;
-}
-
-body.expand dd {
-  font-size: 1.75em;
-}
-
-body.expand img {
-  width:15em;
 }
