@@ -31,7 +31,7 @@ body {
   overflow: hidden;
   outline: none;
   animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
-  
+
 
 }
 
@@ -126,6 +126,17 @@ h1 {
   font-size: 2.5rem;
   color: white;
 }
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+}
+
 
 .profile-picture img {
   width: 10em;
